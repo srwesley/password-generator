@@ -31,6 +31,20 @@ function generatePassword() {
   } else {
     alert("You have opted out of using uppercase letters.");
   }
+
+  numbers = confirm("Do you want to use numbers?");
+  if (numbers) {
+    alert("You have selected to use numbers.");
+  } else {
+    alert("You have opted out of using numbers.");
+  }
+
+  specialCharacters = confirm("Do you want to use special characters?");
+  if (specialCharacters) {
+    alert("You have selected to use special characters.");
+  } else {
+    alert("You have opted out of using special characters.");
+  }
   // return "Random password goes here!"
 }
 
