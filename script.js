@@ -18,11 +18,18 @@ function generatePassword() {
     alert("Your password will be " + numberOfCharacters + " characters long.")
   }
 
-  lowercaseCharacters = confirm("Do you want lowercase characters?");
+  lowercaseCharacters = confirm("Do you want to use lowercase characters?");
   if (lowercaseCharacters) {
     var toLowerCase = alert("You have selected to use lowercase characters.");
   } else {
     alert("You have opted out of using lowercase characters.");
+  }
+
+  upperCaseCharacters = confirm("Do you want to use uppercase characters?");
+  if (upperCaseCharacters) {
+    alert("You have selected to use uppercase characters.");
+  } else {
+    alert("You have opted out of using uppercase letters.");
   }
   // return "Random password goes here!"
 }
