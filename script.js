@@ -1,5 +1,10 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+
+var lowerCaseChar = "abcdefghijklmnopqrstuvwxyz";
+var upperCaseChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numericChar = "0123456789";
+var specialChar = "!#$%&()/*+-";
  
 function generatePassword() {
   console.log("The button was clicked!");
@@ -13,7 +18,13 @@ function generatePassword() {
     alert("Your password will be " + numberOfCharacters + " characters long.")
   }
 
-  return "Random password goes here!";
+  lowercaseCharacters = confirm("Do you want lowercase characters?");
+  if (lowercaseCharacters) {
+    var toLowerCase = alert("You have selected to use lowercase characters.");
+  } else {
+    alert("You have opted out of using lowercase characters.");
+  }
+  // return "Random password goes here!"
 }
 
 // Write password to the #password input
